@@ -1,0 +1,10 @@
+<input type="number" [value]="num1" (change)="onSubmitNum1($event.target.value)">
+<input type="number" [value]="num2" (change)="onSubmitNum2($event.target.value)">
+<select name="option" [value]="option" (change)="onSelectOption($event.target.value)">
+  <option value='+'>+</option>
+  <option value='-'>-</option>
+  <option value='*'>*</option>
+  <option value='/'>/</option>
+</select>
+<button (click)="calculate()">=</button>
+<h3>Result: {{ result }}</h3>
